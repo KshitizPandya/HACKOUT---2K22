@@ -1,0 +1,123 @@
+@import url(&#34;https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&amp;display=swap&#34;
+);
+
+ :root {
+     --highlight: #5756e6;
+}
+ * {
+     box-sizing: border-box;
+}
+ body {
+    margin: 0;
+    padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     font-family: sans-serif;
+}
+
+ .navbar {
+     border-radius: 32px;
+     background-color: transparent;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     max-width: 85vh;
+     margin-bottom: 75vh;
+}
+
+li img
+{
+    margin-left: 0;
+    margin-right: 77vh;
+    height: 250px;
+    width: 305px;
+}
+
+
+ .list-item {
+     list-style-type: none;
+     flex-basis: 100%;
+     min-height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     color: white;
+     margin-right: 5em;
+     transform: translateY(0);
+     transition: transform 0.5s ease, opacity 0.2s ease;
+     cursor: pointer;
+}
+ .list-item-name {
+     font-size: 20px;
+     font-weight: 500;
+     position: absolute;
+     transform: translate(0, 50px);
+     transition: transform 0.5s ease, opacity 0.2s ease;
+     opacity: 0;
+}
+ .list-item:hover {
+     color: white;
+     transform: translateY(-10px);
+}
+ .list-item:hover .list-item-name {
+     transform: translateY(40px);
+     opacity: 1;
+}
+
+@media (max-width: 350px) {
+     .navbar {
+         flex-direction: column;
+         align-items: center;
+         max-width: 120px;
+         padding-bottom: 20px;
+    }
+     .list-item {
+         flex-basis: auto;
+    }
+     .list-item:hover .list-item-name {
+         transform: translateY(25px);
+    }
+}
+
+
+.container{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 15em;
+}
+
+
+div p{
+    font-size: 45px;
+    color: white;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+}
+
+a:hover{
+    background: #333;
+    color: #fff;
+}
+
+.title{
+    position: absolute;
+    top: 135px;
+    color: #fff;
+}
